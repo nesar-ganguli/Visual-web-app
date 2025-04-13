@@ -71,3 +71,13 @@ The goal of this project was to build a lightweight, language-agnostic visualiza
 ## Result
 
 The final application successfully supports both static and interactive visualizations in Python and R. It provides a clean user interface, dynamic code execution, robust error handling, and correct rendering behavior in the browser. Both 2D and 3D plots are supported.
+
+## Setup Instructions
+
+Follow the steps below to run the application locally after cloning the repository.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/nesar-ganguli/Visual-web-app.git
+cd Visual-web-app
