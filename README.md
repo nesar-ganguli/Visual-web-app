@@ -81,3 +81,38 @@ Follow the steps below to run the application locally after cloning the reposito
 ```bash
 git clone https://github.com/nesar-ganguli/Visual-web-app.git
 cd Visual-web-app
+```
+### 2. Set Up the Backend (Flask)
+
+```bash
+cd viz-backend
+python3 -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+```
+This starts the Flask server on http://localhost:5050.
+
+### 3. Set Up the Frontend (React)
+Open a new terminal window or tab:
+```bash
+cd viz-app
+npm install
+npm start
+```
+This starts the React app on http://localhost:3000.
+
+Usage
+Select a language (Python or R)
+
+Paste your code in the editor
+
+Click "Generate"
+
+The output will appear below:
+
+.png → displayed as an image
+
+.html → displayed as an embedded iframe (interactive)
+
+Enjoy!!! 🥳 
