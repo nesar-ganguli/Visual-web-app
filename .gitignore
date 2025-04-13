@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+*.log
+
+# Python
+venv/
+__pycache__/
+*.pyc
+outputs/
+
+# OS
+.DS_Store
+
+# React build
+build/
+
+# R files (optional)
+.Rhistory
+.RData
