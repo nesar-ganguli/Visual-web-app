@@ -31,6 +31,11 @@ def execute_code():
         if language == 'python':
             if ext == '.html':
                 script_file = f"temp_{file_id}.py"
+                debugged_code = code + f'\nfig.write_html("{output_path}")'
+
+                # ✅ This writes the file before running it
+                with open(script_file, 'w') as f:
+                    f.write(debugged_code)
 
                 try:
                     result = subprocess.run(
@@ -45,8 +50,8 @@ def execute_code():
                         "error": f"Python script failed.\nSTDOUT:\n{e.stdout}\nSTDERR:\n{e.stderr}"
                     }), 500
 
-
                 os.remove(script_file)
+
             else:
                 # Matplotlib PNG
                 exec(code + f"\nplt.savefig('{output_path}')", {'plt': plt})
