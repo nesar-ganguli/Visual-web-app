@@ -71,3 +71,48 @@ The goal of this project was to build a lightweight, language-agnostic visualiza
 ## Result
 
 The final application successfully supports both static and interactive visualizations in Python and R. It provides a clean user interface, dynamic code execution, robust error handling, and correct rendering behavior in the browser. Both 2D and 3D plots are supported.
+
+## Setup Instructions
+
+Follow the steps below to run the application locally after cloning the repository.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/nesar-ganguli/Visual-web-app.git
+cd Visual-web-app
+```
+### 2. Set Up the Backend (Flask)
+
+```bash
+cd viz-backend
+python3 -m venv venv
+source venv/bin/activate 
+pip install -r requirements.txt
+python app.py
+```
+This starts the Flask server on http://localhost:5050.
+
+### 3. Set Up the Frontend (React)
+Open a new terminal window or tab:
+```bash
+cd viz-app
+npm install
+npm start
+```
+This starts the React app on http://localhost:3000.
+
+Usage
+Select a language (Python or R)
+
+Paste your code in the editor
+
+Click "Generate"
+
+The output will appear below:
+
+.png → displayed as an image
+
+.html → displayed as an embedded iframe (interactive)
+
+Enjoy!!! 🥳 
